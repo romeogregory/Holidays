@@ -50,6 +50,8 @@ export default function CounterTab() {
       {Available ? (
         <CountDown
           until={HolidayData.daysToGo - 60 * 60 * 24}
+          digitStyle={{backgroundColor: '#FFF'}}
+          digitTxtStyle={{color: '#2c3e50'}}
           onFinish={() => alert("Je hebt op dit moment vakantie!")}
           size={20}
         />
